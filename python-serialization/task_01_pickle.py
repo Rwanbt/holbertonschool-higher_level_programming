@@ -1,4 +1,4 @@
-#!\usr\bin\env python3
+#!/usr/bin/env python3
 """
 This module provide functions to serialize a python dictionary
 to a json file and deserialize a json file back to a python dictionary.
@@ -27,7 +27,7 @@ def load_and_deserialize(filename):
     Args:
         filename (str): The filename of the input json file.
 
-    Return:
+    Returns:
         dict: The deserialized python dictionary from the file.
     """
     with open(filename, "r", encoding="utf-8") as f:
