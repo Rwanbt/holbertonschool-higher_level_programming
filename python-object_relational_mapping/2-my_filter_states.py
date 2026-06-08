@@ -19,9 +19,9 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    query = "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC".format(
-        sys.argv[4]
-    )
+    query = (
+        "SELECT * FROM states WHERE name = BINARY '{}' ORDER BY states.id ASC"
+    ).format(sys.argv[4])
 
     cursor.execute(query)
 
