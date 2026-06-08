@@ -23,8 +23,6 @@ if __name__ == "__main__":
 
     cursor.execute(query, (sys.argv[4],))
 
-    cursor.execute(query)
-
     rows = cursor.fetchall()
     for row in rows:
         print(row)
